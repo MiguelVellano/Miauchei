@@ -1,0 +1,289 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 8rem;
+}
+
+header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 7rem;
+  background-color: #fff;
+  padding: 0 8rem;
+}
+
+#logo img{
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+}
+
+#logo img:hover, #menu-header li a:hover{
+  text-decoration: none;
+  transform: translateY(-4px);
+  font-weight: bold;
+  color: #000;
+  border-bottom: 1px solid #000;
+  transition-duration: .3s;
+}
+
+#menu-header {
+  list-style: none;
+
+  display: flex;
+  align-items: stretch;
+  text-align: center;
+  padding-top: 2vh;
+  gap: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: .5rem;
+}
+
+#btn-mobile {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#btn-mobile img{
+  width: 4rem;
+  height: 2.5rem;
+}
+
+#profile-pic {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1000rem;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.profile-header {
+  position: absolute;
+  right: 1vw;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;  
+}
+
+.profile-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.profile-text span:nth-child(1){
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.profile-text span:nth-child(2){
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;  
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+}
+
+/* 
+#drop-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+
+#drop-menu li a{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .6rem;
+  cursor: pointer;
+}
+
+#drop-menu li a img {
+  width: 2rem;
+  height: 2rem;
+}
+
+#drop-menu li a {
+  text-decoration: none;
+  color: #000;
+} 
+
+#drop-menu li:hover{
+  border-bottom: 1px solid #000;
+  transition: .6s;
+} */
+
+@media (max-width: 800px) {
+  #btn-mobile {
+    display: block;
+  }
+
+  .header-content {
+    padding: 0rem .8rem!important;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;  
+  }
+
+  #logo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 6rem;
+  }
+  
+  #menu-header {
+    display: block;
+    position: absolute;
+    height: 1rem;
+    top: 6rem;
+    width: 100vw;
+    right: 0;
+    transition: 600ms;
+    background-color: #fff;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  nav.active #menu-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2vh;
+    
+    height: calc(100vh - 7rem);
+    visibility: visible;
+  }
+}
+
+.action {
+  position: fixed;
+  right: 2rem;
+}
+
+.action .profile {
+  border-radius: 999rem;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+  position: relative;
+  padding: 0!important;
+}
+
+.action .profile img {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  height: 100%;
+}
+
+.action .menu {
+  background-color: #fff;
+  border-radius: .4rem;
+  padding: 1rem;
+  position: absolute;
+  right: -1rem;
+  width: 20rem;
+  transition: 0.5s;
+  top: 12rem;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.action .menu.active {
+  opacity: 1;
+  top: 6.5rem;
+  visibility: visible;
+}
+
+.action .menu::before {
+  background-color: #fff;
+  content: "";
+  height: 2rem;
+  position: absolute;
+  right: 2rem;
+  transform: rotate(45deg);
+  top: -.5rem;
+  width: 2rem;;
+}
+
+.action .menu h3 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1.3rem;
+  padding: 2rem 0;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.action .menu ul li {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: left;
+  padding: 1rem 0;
+}
+
+.menu ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.menu ul li a{
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: center;
+  gap: 1rem;
+}
+
+.menu ul li a:hover {
+  background-color: #f5f5f5;
+  text-decoration: none;
+  color: #000;
+}
+
+.menu ul li a img {
+  width: 2rem;
+}

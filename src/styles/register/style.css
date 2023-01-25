@@ -1,0 +1,282 @@
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #E9E9E9;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+
+@media (max-width: 910px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.decoration{
+  position: fixed;
+  top: -1rem;
+  right: 0;
+  z-index: -1;
+}
+
+.bottom-decoration{
+  position: fixed;
+  bottom: -.5rem;
+  left: 0;
+  z-index: -1;
+}
+
+.content-text .logo{
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+}
+
+.logo img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.logo h1 {
+  font-size: 2.6rem;
+}
+
+.content-text p {
+  font-size: 1.8rem;
+}
+
+form{
+  background-color: var(--blue);
+  width: 100vw;
+  max-width: clamp(26rem, 26rem + 15vw, 44rem);
+  border-radius: 8px;
+  padding: .5rem 4rem 4rem; 
+
+  box-shadow: 2px 4px 12px 0px #00000080;
+
+  display: flex;
+  flex-direction: column;
+}
+
+form > section:nth-child(1){
+  height: 6rem;
+  width: 6rem;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+form legend {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-top: .8rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;  
+  height: 100%;
+}
+
+.line{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.input{
+  display: flex;
+  gap: .8rem;
+  flex-direction: column; 
+}
+
+.input-wrapper{
+  text-align: center;
+}
+
+.col-2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-wrapper input {
+  height: 5rem;
+  width: 100%;
+  padding: .5rem;
+
+  border-radius: 8px;
+  border: none;
+}
+
+.input section:nth-child(1) input{
+  background-image: url('../../images/svg/email.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+}
+
+.input section:nth-child(2) input{
+  background-image: url('../../images/nameInput.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+}
+
+.input section:nth-child(3) input{
+  background-image: url('../../images/svg/cake-candles-solid.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input section:nth-child(4) input{
+  background-image: url('../../images/svg/phone-solid.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+
+}
+
+
+.input section:nth-child(5) input, .input section:nth-child(6) input{  
+  background-image: url('../../images/svg/lock-solid.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+}
+
+.input-wrapper input::placeholder{
+  font-size: 1.5rem;
+  opacity: .5;
+}
+
+.interaction{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn-submit{
+  width: 100%;
+  height: 4rem;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--bg);
+  margin: 2rem 0;
+  cursor: pointer;
+  color: black;
+  font-size: 1.6rem;
+}
+
+.btn-submit:hover{
+  transition-duration: 200ms;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin: 0;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+
+  border: 1px solid #E6E6F0;
+  border-radius: .8rem;
+  display: block;
+}
+
+.checkbox-wrapper input:checked + label::before{
+  background-image: url("../../images/svg/check.svg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox-wrapper input:focus + label::before{
+  outline: 2px solid black ;
+}
+
+.checkbox {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+fieldset p, fieldset p a {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+fieldset p a {
+  color: #0f0;
+}
+
+
+/*----------------------------------------------------------------*/
+
+@media (min-width:800px) {
+  button {
+    width: 100%;
+    max-width: 28rem;
+  }
+
+  .btn-submit{
+    height: 5rem;
+  }
+
+  .input-wrapper input {
+    height: 5.6rem;
+  }
+
+  .checkbox {
+    margin-left: 3rem;
+  }
+}

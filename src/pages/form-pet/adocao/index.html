@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Adoção de pet</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../../../../global.css">
+  <link rel="stylesheet" href="../../../styles/components/header/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <nav>
+        <a href="../../../../index2.html " id="logo"><img src="../../../images/iconsMiauchei/miauchei.svg" alt="Logo Miauchei"></a>
+        <button id="btn-mobile"><img src="src/images/svg/menubar.svg" alt=""></button>
+        <ul id="menu-header">
+          <li><a href="../../../../index2.html">Início</a></li>
+          <li><a href="../../animais_perdidos.php">Animais Perdidos</a></li>
+          <li><a href="../../animais_adocao.php">Adoção</a></li>
+          <li><a href="#">Sobre nós</a></li>
+        </ul>
+      </nav>
+    
+
+      <div class="action">
+        <div class="profile">
+          <img src="https://github.com/viniciusamc.png" alt="">
+        </div>
+
+        <div class="menu">
+          <h3>Olá, Vinícius</h3>
+          <ul>
+            <li><a href="">Meu Perfil<img src="../images/svg/nameInput.svg" alt=""></a></li>  
+            <li><a href="">Editar Perfil <img src="../images/svg/gear-solid.svg" alt=""></a></li>
+            <li><a href="">Posts Salvos <img src="../images/svg/star-regular.svg" alt=""></a></li>
+            <li><a href="">Ajuda <img src="../images/svg/circle-question-regular.svg" alt=""></a></li>
+            <li><a href="signup.php">Sair <img src="../images/svg/right-from-bracket-solid.svg" alt=""></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="close"><a href="../../animais_adocao.php">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+    </a>
+    </div>
+
+    <form action="create_post_animais_adocao.php" method="POST" enctype="multipart/form-data">
+      <h1>
+        Anuncie o seu pet para adoção!
+      </h1>
+      <fieldset>
+        <title>Anunciar o pet para adoção</title>
+      
+        <div class="input-wrapper">
+          <label for="nome">Nome*</label>
+          <input type="text" name="nome_pet" id="nome_pet" placeholder="Nome" required>
+        </div>
+   
+        <div class="input-wrapper">
+          <label for="raca">Raça</label>
+          <input type="text" name="raca" id="raca" placeholder="Raça">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="sexo">Sexo*</label>
+          <select name="sexo" id="sexo" placeholder="Sexo">
+            <option value="Macho">Macho</option>
+            <option value="Macho">Fêmea</option>
+          </select>
+
+        </div>
+
+        <div class="input-wrapper">
+          <label for="idade">Idade* <span>(Em Meses)</span></label>
+          <input type="number" name="idade" id="idade" placeholder="Idade" required>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="descricao">Descrição</label>
+          <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Descrição"></textarea>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="local">Localização</label>
+          <textarea name="local" id="local" cols="30" rows="10" placeholder="Local"></textarea>
+        </div>
+
+        <div class="col-2">
+          <div class="input-wrapper">
+            <label for="DDD">DDD</label>
+            <input type="number" name="DDD" id="DDD" placeholder="DDD" required min="0" max="99">
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="Telefone">Telefone</label>
+            <input type="tel" name="Telefone" id="Telefone" placeholder="Telefone" required>
+          </div>
+        </div>
+
+
+        <div class="input-wrapper">
+          <label for="nome">Fotos</label>
+          <input type="file" name="image" required>
+        </div>
+
+        <button type="submit" class="send-form" name="upload_image_btn">Enviar</button>
+
+        <span class="close-window"><img src="../images/svg/arrowLeft.svg" alt=""></span>
+      </fieldset>
+    </form>
+  </main>
+
+<script src="../../../js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pets para adoção - Miauchei</title>
+
+  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="../../global.css">
+  <link rel="stylesheet" href="../styles/animais_perdidos/styles.css">
+  <link rel="stylesheet" href="../styles/components/header/styles.css">
+</head>
+<body>
+
+  <header class="">
+    <div class="logoHeader">
+      <img src="../images/iconsMiauchei/miauchei.svg" alt="LOGO MIAUCHEI">
+    </div>
+    
+    <nav class="menuMobile hide">
+      <ul>
+        <li><a href="./../../index2.html">Home</a></li>
+        <li><a href="#">Animais Perdidos</a></li>
+        <li><a href="#">Adoção</a></li>
+        <li><a href="#">Sobre nós</a></li>
+      </ul>
+    </nav>
+
+    <nav class="menuDesktop hide">
+      <ul>
+        <li><a href="./../../index2.html">Home</a></li>
+        <li><a href="#">Animais Perdidos</a></li>
+        <li><a href="#">Adoção</a></li>
+        <li><a href="#">Sobre nós</a></li>
+      </ul>
+    </nav>
+    
+    <div class="menuBar">
+      <img src="../images/svg/menubar.svg" alt="LOGO MIAUCHEI GATO E CACHORRO">
+    </div>
+
+    <div class="icon">
+      <a href="src/pages/login.html"><img src="https://github.com/viiniciusgm.png" alt="Foto do usuário"></a>
+    </div>
+  </header>
+
+  <main>
+    <section id="anuncio">
+      <h1>Perder seu pet? <br> Gostaria de anunciá-lo?</h1>
+
+      <button href="#" class="anunciar">Anunciar</button>
+
+      <dialog class="pop-dialog">
+        
+        <form action="#">
+          <h1>
+              Anuncie seu pet!
+          </h1>
+          <fieldset>
+            <title>Anunciar o pet</title>
+
+            <div class="input-wrapper">
+              <h4>Selecione uma opção*</h4>
+              <select required >
+                <option>Perdido</option>
+                <option>Adoção</option>
+              </select>
+            </div>
+          
+            <div class="input-wrapper">
+              <label for="nome">Nome*</label>
+              <input type="text" name="nome" id="" placeholder="Nome">
+            </div>
+       
+            <div class="input-wrapper">
+              <label for="raca">Raça*</label>
+              <input type="text" name="raca" id="" placeholder="Raça">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="sexo">Sexo*</label>
+              <input type="text" name="sexo" id="" placeholder="Sexo">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="idade">Idade*</label>
+              <input type="number" name="idade" id="" placeholder="Idade">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="descricao">Descrição*</label>
+              <textarea name="descricao" id="" cols="30" rows="10" placeholder="Descrição"></textarea>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="nome">Foto*</label>
+              <input type="file" name="Foto" id="" placeholder="Foto" accept="image/*">
+            </div>
+
+            <button class="send-form">Enviar</button>
+
+            <span class="close-window"><img src="../images/svg/arrowLeft.svg" alt=""></span>
+          </fieldset>
+        </form>
+      </dialog>
+    </section>
+
+    <section class="feed">
+      
+      <section class="pet-card">
+        <section class="image-card">
+          <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Pet em destaque 1">
+          
+         <div class="tags"><span class="pet-tag">Cachorro</span> <span class="situacao-tag">Adoção</span> <span class="data-tag">01/11/2022</span></div>
+          <div class="desc-pet">
+            <h1>
+              Dolg
+            </h1>
+            <p class="endereco-pet">
+              Rua 1 Bairro Jundiai - Santa Isabel, SP
+            </p>
+            <p class="desc-detalhada-pet">
+              Meu pet sumiu perto da praça da bandeira, foi visto pela ultima vez na praça da sé
+            </p>
+            <button>Ver detalhes...</button>
+          </div>
+          </section>
+      </section>      
+
+      <section class="pet-card">
+        <section class="image-card">
+          <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80" alt="Pet em destaque 1">
+          
+         <div class="tags"><span class="pet-tag">Gato</span> <span class="situacao-tag">Adoção</span> <span class="data-tag">28/10/2022</span></div>
+          <div class="desc-pet">
+            <h1>
+              Dolg
+            </h1>
+            <p class="endereco-pet">
+              Rua 1 Bairro Jundiai - Santa Isabel, SP
+            </p>
+            <p class="desc-detalhada-pet">
+              Meu pet sumiu perto da praça da bandeira, foi visto pela ultima vez na praça da sé
+            </p>
+            <button>Ver detalhes...</button>
+          </div>
+          </section>
+      </section>  
+      
+      <section class="pet-card">
+        <section class="image-card">
+          <img src="https://media.istockphoto.com/photos/funny-british-shorthair-cat-portrait-looking-shocked-or-surprised-picture-id1361394182?b=1&k=20&m=1361394182&s=170667a&w=0&h=cW_NDV-D-jrWBVcEPclIU9vRipFQZQC0armvGMN7w-c=" alt="Pet em destaque 1">
+          
+         <div class="tags"><span class="pet-tag">Gato</span> <span class="situacao-tag">Adoção</span> <span class="data-tag">21/10/2022</span></div>
+          <div class="desc-pet">
+            <h1>
+              Dolg
+            </h1>
+            <p class="endereco-pet">
+              Rua 1 Bairro Jundiai - Santa Isabel, SP
+            </p>
+            <p class="desc-detalhada-pet">
+              Meu pet sumiu perto da praça da bandeira, foi visto pela ultima vez na praça da sé
+            </p>
+            <button>Ver detalhes...</button>
+          </div>
+          </section>
+      </section>  
+
+      <section class="pet-card">
+        <section class="image-card">
+          <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Pet em destaque 1">
+          
+         <div class="tags"><span class="pet-tag">Cachorro</span> <span class="situacao-tag">Adoção</span> <span class="data-tag">01/11/2022</span></div>
+          <div class="desc-pet">
+            <h1>
+              Dolg
+            </h1>
+            <p class="endereco-pet">
+              Rua 1 Bairro Jundiai - Santa Isabel, SP
+            </p>
+            <p class="desc-detalhada-pet">
+              Meu pet sumiu perto da praça da bandeira, foi visto pela ultima vez na praça da sé
+            </p>
+            <button>Ver detalhes...</button>
+          </div>
+          </section>
+      </section>      
+      
+    </section>
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

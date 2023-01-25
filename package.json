@@ -1,0 +1,14 @@
+{
+  "name": "miauchei",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:viniciusamc/miauchei.git",
+  "author": "vinicius <viniciusmartinsdacunha1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "start": "lite-server",
+  },
+}

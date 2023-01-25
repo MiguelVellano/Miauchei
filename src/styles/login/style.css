@@ -1,0 +1,264 @@
+@import '../../../global.css';
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg);
+}
+
+.decoration{
+  position: fixed;
+  top: -1rem;
+  right: 0;
+  z-index: -1;
+}
+
+.bottom-decoration{
+  position: fixed;
+  bottom: -.5rem;
+  left: 0;
+  z-index: -1;
+}
+
+main {
+  position: relative;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.content-text .logo {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.logo h1 {
+  font-size: 2.6rem;
+}
+
+.logo img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.content-text p {
+  font-size: 1.8rem;
+  color: #000;
+}
+
+form{
+  margin-top: -2rem;
+  background-color: var(--blue);
+  width: 100vw;
+  max-width: clamp(26rem, 26rem + 15vw, 44rem);
+  border-radius: .8rem;
+  padding: .5rem 4rem 4rem; 
+
+  box-shadow: 2px 4px 12px 0px #00000080;
+
+  display: flex;
+  flex-direction: column;
+}
+
+form legend {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-top: .8rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;  
+  height: 100%;
+}
+
+.input{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column; 
+}
+
+.input-wrapper{
+  text-align: center;
+}
+
+
+.input-wrapper input {
+  height: 4rem;
+  width: 100%;
+  max-width: 36rem;
+  padding: .5rem;
+
+  border-radius: 8px;
+  border: none;
+  z-index: 1;
+}
+
+.input section:nth-child(1) input{
+  background-image: url('../../images/svg/email.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+}
+
+.input section:nth-child(2) input{
+  background-image: url('../../images/lockSignUp.svg');
+  background-repeat: no-repeat;
+  background-position: center left 10px;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+}
+
+.input-wrapper input::placeholder{
+  font-size: 1.5rem;
+  opacity: .5;
+}
+
+.interaction{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+a{
+  text-decoration: none;
+}
+
+.forgot-password {
+  text-align: left;
+  color: black;
+  margin-top: .5rem;
+  font-size: 1.2rem;
+  width: fit-content;
+  z-index: 1;
+}
+
+a:hover {
+  transform: scale(1.01);
+  transition-duration: 200ms;
+}
+
+.btn-submit{
+  width: 100%;
+  height: 4rem;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--bg);
+  margin: 2rem 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn-submit:hover, .col-2 button:hover{
+  transform: scale(1.01);
+  background-color: var(--bg);
+  transition-duration: 200ms;
+}
+
+.register{
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+
+/*----------------------------------------------------------------*/
+
+.second legend {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.col-2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  height: 100%;
+  align-items: center;
+  z-index: 1;
+}
+
+.col-2 button {
+  width: 100%;
+  background-color: var(--btn-brown);
+  border: none;
+  border-radius: .8rem;
+  padding: .5rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*----------------------------------------------------------------*/
+
+.decorations img {
+  opacity: 1;
+  position: absolute;
+}
+
+.dog img {
+  right: 1rem;  
+  bottom: 5rem;
+}
+
+
+.bowl img {
+  right: 3rem;
+  top: -2rem;
+
+}
+
+.cat img {
+  top: 23rem;
+  left: 1rem;
+}
+
+@media (min-width:800px) {
+  .col-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-2 button {
+    padding-block: .9rem;
+  }
+
+  button {
+    width: 100%;
+    max-width: 28rem;
+  }
+
+  .btn-submit{
+    height: 5rem;
+  }
+
+  .input-wrapper input {
+    height: 5rem;
+  }
+}

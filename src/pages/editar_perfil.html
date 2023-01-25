@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../styles/profiles/user/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../styles/profiles/user/style_perfil.css"/>
+    <link rel="stylesheet" href="../../global.css">
+
+</head>
+<body>
+    <header>
+        <a href="perfil_usuario.html">
+            <img src="../images/svg/arrowLeft.svg" class="btn-fechar" alt="voltar">
+        </a>
+        <section class="centralizar">
+            <section class="camera">
+                <img src="https://thispersondoesnotexist.com/image" alt="Foto do usuário" id="perfil">
+                <img src="camera.png" alt="" id="cam">
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+                <title class="sr-only">Editar Perfil</title>
+                <section class="input-wrapper-perfil">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </section>
+
+                <section class="input-wrapper-perfil">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </section>
+
+                <section class="input-wrapper-perfil">
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" id="email" required>
+                </section>
+
+                <section class="input-wrapper-perfil">   
+                    <label for="telefone">Telefone:</label> 
+
+                <section class="centralizar">
+                    <label for="ddd" class="sr-only">DDD</label>
+                    <input type="text" class="elementos" maxlength="3" name="ddd" id="ddd" placeholder="DDD">
+                    <input type="text" class="elementos" name="telefone" id="telefone">
+                </section>
+                </section>
+                <section class="endereco">
+                <section class="input-wrapper-perfil">   
+                    <label for="cidade">Endereço:</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+                </section> 
+
+                <section class="input-wrapper-perfil">   
+                    <label for="bairro" class="sr-only">Bairro</label>
+                    <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+                </section>
+
+            <section class="input-wrapper-perfil">   
+                <section class="centralizar">
+                    <label for="numero" class="sr-only">Número</label>
+                    <input type="text" class="elementos" name="numero" cols="5" id="numero" placeholder="Num">
+
+                    <label for="cep" class="sr-only">CEP</label>
+                    <input type="text" class="elementos" maxlength="8" name="cep" id="cep" placeholder="CEP">
+                    
+                    <select class="elementos" id="UF" name="UF">
+                    <option value="">UF</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    </select>
+                </section>
+                </section>
+                
+                <section class="input-wrapper-perfil">     
+                    <label for="complemento" class="sr-only">Complemento</label>
+                    <input type="text" name="complemento" id="complemento" placeholder="Complemento">
+                </section>
+            </section>
+                    <input type="submit" name="Salvar" id="btn-style" value="Salvar">
+            </fieldset>
+        </form>
+    </ma>
+
+    <footer>
+        <section class="footer-itens">
+            <h2>© COPYRIGHT MIAUCHEI</h2>
+        </section>
+
+        <section class="alinhado">
+            <img src="../images/iconsMiauchei/gato_preto.png" alt="" id="gato_preto">
+        </section> 
+        
+    </footer>
+</body>
+</html>
